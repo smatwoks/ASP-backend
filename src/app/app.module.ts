@@ -14,12 +14,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { OrderComponent } from './order/order.component';
 import { OrderTrackingComponent } from './order-tracking/order-tracking.component';
 import { LoginComponent } from './login/login.component';
-import { PasswordComponent } from './password/password.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { PasswordComponent } from './password/password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,10 +34,10 @@ import { UserComponent } from './user/user.component';
     OrderComponent,
     OrderTrackingComponent,
     LoginComponent,
-    PasswordComponent,
     SignupComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    PasswordComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -11,7 +12,7 @@ export class SignupComponent {
   lastname: string ="";
   email: string ="";
   password: string ="";
-  constructor(private http: HttpClient) 
+  constructor(private router: Router,private http: HttpClient) 
   {
   }
   ngOnInit(): void
@@ -28,8 +29,13 @@ export class SignupComponent {
     };
     this.http.post("http://localhost:2003/admin/create",bodyData).subscribe((resultData: any)=>
     {
-        console.log(resultData);
-        alert("Student Registered Successfully")
+      if (resultData.status) 
+        {
+      
+           this.router.navigateByUrl('/user');
+    
+        } 
+
     });
   }
   save()

@@ -11,14 +11,15 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { OrderComponent } from './order/order.component';
 import { OrderTrackingComponent } from './order-tracking/order-tracking.component';
 import { LoginComponent } from './login/login.component';
-import { PasswordComponent } from './password/password.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { PasswordComponent } from './password/password.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  {path:'password',component:PasswordComponent},
   {path:'admin',component:AdminComponent},
   {path:'user',component:UserComponent},
   { path: 'about', component: AboutComponent },  
@@ -31,7 +32,6 @@ const routes: Routes = [
   { path:  'order', component:OrderComponent},
   { path:  'order-tracking', component:OrderTrackingComponent},
   { path:  'login', component:LoginComponent},
-  { path:  'password', component:PasswordComponent},
   { path:  'signup', component:SignupComponent},
 
 

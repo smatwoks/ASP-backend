@@ -7,10 +7,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+ 
+
+
+
   email: string = '';
   isLogin: boolean = true;
   erroMessage: string = "";
-  constructor(private router: Router,private http: HttpClient) {}
+  constructor(private router: Router,private http: HttpClient) { }
   login() {
     console.log(this.email);
     let bodyData = {

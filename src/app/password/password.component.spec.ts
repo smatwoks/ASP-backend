@@ -6,10 +6,12 @@ describe('PasswordComponent', () => {
   let component: PasswordComponent;
   let fixture: ComponentFixture<PasswordComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [PasswordComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ PasswordComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(PasswordComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

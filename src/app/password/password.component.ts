@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./password.component.css']
 })
 export class PasswordComponent {
+ 
+  non:string= "";
   password:string = "";
   isLogin: boolean = true;
   erroMessage: string = "";
@@ -15,6 +17,13 @@ export class PasswordComponent {
     let bodyData = {
       password: this.password,
     };
+    console.log(this.non);
+    if (this.password == this.non) 
+      {
+    
+         this.router.navigateByUrl('/password');
+  
+      }else{
         this.http.post("http://localhost:2003/admin/password", bodyData).subscribe(  (resultData: any) => {
         console.log(resultData);
         console.log(resultData.message);
@@ -24,7 +33,7 @@ export class PasswordComponent {
            this.router.navigateByUrl('/user');
     
         } 
-        else if(resultData.status == "1")
+        else if(resultData.message == "password")
          {
           this.router.navigateByUrl('/password');
         }
@@ -32,6 +41,8 @@ export class PasswordComponent {
           alert("Incorrect Email or Password");
           console.log("Errror login");
         }
-      });
+      }
+    );
+  }
     }
 }

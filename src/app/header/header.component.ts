@@ -18,13 +18,21 @@ export class HeaderComponent implements OnInit {
           headerElement.classList.remove('login');
           headerElement.classList.remove('password');
           headerElement.classList.remove('signup');
+          headerElement.classList.remove('admin');
+          headerElement.classList.remove('user');
+
           if (event.url === '/login') {
             headerElement.classList.add('login');
           } else if (event.url === '/password') {
             headerElement.classList.add('password');
           } else if (event.url === '/signup') {
             headerElement.classList.add('signup');
+          }else if (event.url === '/admin') {
+            headerElement.classList.add('admin');
+          }else if (event.url === '/user') {
+            headerElement.classList.add('user');
           }
+
         }
       }
     });
