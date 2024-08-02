@@ -12,6 +12,8 @@ import { ProductsComponent } from './products/products.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
+import { CaaqmsComponent } from './caaqms/caaqms.component';
+import { CemsComponent } from './cems/cems.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     ServicesComponent,
     ProductsComponent,
     ContactComponent,
+    CaaqmsComponent,
+    CemsComponent,
   ],
   imports: [
     BrowserModule,

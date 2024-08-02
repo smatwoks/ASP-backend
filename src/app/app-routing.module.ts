@@ -7,6 +7,8 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+import { CaaqmsComponent } from './caaqms/caaqms.component';
+import { CemsComponent } from './cems/cems.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'services', component:ServicesComponent},
   { path: 'products', component:ProductsComponent},
   {path:'contact',component:ContactComponent},
+  {path:'caaqms',component:CaaqmsComponent},
+  {path:'cems',component:CemsComponent},
   { path: '**', redirectTo: '/home' }
 ];
 
