@@ -4,3 +4,24 @@
     align-items: center;
     /* height: 100vh; Optional: takes the full height of the viewport */
   }
+
+
+  /* CSS for product card animation, hover, and border lighting effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5); /* Add a shadow with yellow color (warning color) */
+  border-color: rgba(255, 193, 7, 0.8); /* Border lighting effect */
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}

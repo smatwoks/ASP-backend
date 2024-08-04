@@ -15,8 +15,10 @@ export class ContactComponent {
   isLogin: boolean = true;
   erroMessage: string = "";
   constructor(private router: Router,private http: HttpClient) { }
-  login() {
-    console.log(this.email);
+  
+
+    send(){
+      console.log(this.email);
     let bodyData = {
       email: this.email,
       name:this.name,
@@ -24,28 +26,14 @@ export class ContactComponent {
       msg:this.msg
     };
     console.log(bodyData);
-        this.http.post("http://localhost:3000/sendlink", bodyData).subscribe(  (resultData: any) => {
-        console.log(resultData);
-        console.log(resultData.message);
+      this.http.post("https://application-development-webdow-3.onrender.com/ok",bodyData).subscribe((result:any)=>{
+        console.log(result.message);
 
-        // if (resultData.message == "admin") 
-        // {
-      
-        //    this.router.navigateByUrl('/admin');
-    
-        // }  else if(resultData.message == "signup")
-        //   {
-        //    this.router.navigateByUrl('/signup');
-        //  }
-        // else if(resultData.status == "1")
-        //  {
-        //   this.router.navigateByUrl('/password');
-        // }
-        // else{
-        //   alert("Incorrect Email or Password");
-        //   console.log("Errror login");
-        // }
-      });
+        if(result.message == 'one'){
+          
+        alert("Student Registered Successfully");
+        }
+      })
     }
 
 }

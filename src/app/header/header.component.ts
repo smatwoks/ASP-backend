@@ -9,7 +9,13 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+  set(){
+    // let name = String(this.name);
+    let data ={ id:1,name:'reddy'};
+          localStorage.setItem("name", JSON.stringify(data));
+          console.log("true");
+  }
+  
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

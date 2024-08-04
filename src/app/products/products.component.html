@@ -1,30 +1,94 @@
 <main id="main">
-
   <!-- ======= Breadcrumbs ======= -->
   <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
     <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-
       <h2>Products</h2>
       <ol>
         <li><a href="index.html">Home</a></li>
         <li>Products</li>
       </ol>
-
     </div>
-  </div><!-- End Breadcrumbs -->
- 
+  </div>
+  <!-- End Breadcrumbs -->
+  <!-- ======= Products Section ======= -->
+  <section id="projects" class="projects py-5">
+    <div class="container">
+      <div class="row">
+        <!-- CAAQMS -->
+        <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/377250757/FM/PL/RN/5167063/caaqms-mnt-envirotech.jpg" class="card-img-top" alt="CAAQMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/caaqms" class="btn btn-outline-warning" (click)="set()">CAAQMS</a>
+            </div>
+          </div>
+        </div>
 
-  <section id="projects" class="projects">
-   <div class="center" >
-    <a routerLink="/caaqms"> <button type="button" class="btn btn-outline-warning">CAAQMS</button></a>
-    <a routerLink="/cems"> <button type="button" class="btn btn-outline-warning">CEMS</button></a>
-    <a routerLink="/caaqms"> <button type="button" class="btn btn-outline-warning">CAAQMS</button></a>
-    <a routerLink="/caaqms"> <button type="button" class="btn btn-outline-warning">CAAQMS</button></a>
-    <a routerLink="/caaqms"> <button type="button" class="btn btn-outline-warning">CAAQMS</button></a>
-    <a routerLink="/caaqms"> <button type="button" class="btn btn-outline-warning">CAAQMS</button></a>
-    <a routerLink="/caaqms"> <button type="button" class="btn btn-outline-warning">CAAQMS</button></a>
+        <!-- CEMS -->
+        <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.horiba.com/fileadmin/Horiba/Products/Process_and_Environmental/Combustion/CEMS/CEMS.jpg" class="card-img-top" alt="CEMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/cems" class="btn btn-outline-warning" (click)="set()">CEMS</a>
+            </div>
+          </div>
+        </div>
 
-   </div>
-  </section><!-- End Our Projects Section -->
+        <!-- Repeat for other products -->
+        <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="../../assets/img/ieqms/product-eqms-003.jpg" class="card-img-top" alt="CAAQMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/eqms" class="btn btn-outline-warning" (click)="set()">EQMS</a>
+            </div>
+          </div>
+        </div>
 
-</main><!-- End #main -->
+         <!-- Repeat for other products -->
+         <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="../../assets/img/port/product-cems-009.jpg" class="card-img-top" alt="CAAQMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/port" class="btn btn-outline-warning" (click)="set()">Portable</a>
+            </div>
+          </div>
+        </div>
+
+         <!-- Repeat for other products -->
+         <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="../../assets/img/iwater/product-water-001.1.jpg" class="card-img-top" alt="CAAQMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/water" class="btn btn-outline-warning" (click)="set()">WATER</a>
+            </div>
+          </div>
+        </div>
+
+
+         <!-- Repeat for other products -->
+         <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="../../assets/img/ana/product-rd-001.jpg" class="card-img-top" alt="CAAQMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/analytical" class="btn btn-outline-warning" (click)="set()">Analytical</a>
+            </div>
+          </div>
+        </div>
+
+
+         <!-- Repeat for other products -->
+         <div class="col-md-4 mb-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="../../assets/img/igas/GAS-1010-ProductPhotoMockUp-20230718.jpg" class="card-img-top" alt="CAAQMS" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex justify-content-center">
+              <a routerLink="/gas" class="btn btn-outline-warning" (click)="set()">Gas-chromatography</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue with more products to complete the grid -->
+      </div>
+    </div>
+  </section>
+  <!-- End Products Section -->
+</main>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+<head >
+  <meta charset="utf-8" class="peddi reddy">
   <title>Frontend</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,17 @@
 
 
 </head>
-<body>
+<style>
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+</style>
+<body class="noselect">
   <app-root></app-root>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

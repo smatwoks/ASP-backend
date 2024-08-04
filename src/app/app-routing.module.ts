@@ -9,6 +9,11 @@ import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { CaaqmsComponent } from './caaqms/caaqms.component';
 import { CemsComponent } from './cems/cems.component';
+import { EqmsComponent } from './eqms/eqms.component';
+import { PortComponent } from './port/port.component';
+import { GasComponent } from './gas/gas.component';
+import { WaterComponent } from './water/water.component';
+import { AnalyticalComponent } from './analytical/analytical.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,6 +26,11 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'caaqms',component:CaaqmsComponent},
   {path:'cems',component:CemsComponent},
+  {path:'eqms',component:EqmsComponent},
+  {path:'port',component:PortComponent},
+  {path:'water',component:WaterComponent},
+  {path:'analytical',component:AnalyticalComponent},
+  {path:'gas',component:GasComponent},
   { path: '**', redirectTo: '/home' }
 ];
 

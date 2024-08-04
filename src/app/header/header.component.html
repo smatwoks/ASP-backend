@@ -1,4 +1,4 @@
-<header id="header" class="header d-flex align-items-center " style="height: fit-content;">
+<header id="header"  class="header d-flex align-items-center " style="height: fit-content;">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <h1>ASP<span>.</span></h1>
@@ -7,22 +7,22 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> -->
       <nav id="navbar" class="navbar" >
         <ul>
-          <li><a routerLink="/home" routerLinkActive="active" >Home</a></li>
-          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+          <li><a  [routerLink]="['/home']" routerLinkActive="active" >Home</a></li>
+          <!-- <li><a routerLink="/about" routerLinkActive="active">About</a></li> -->
           
-          <li class="dropdown" ><a routerLink="/products" routerLinkActive="active"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown" ><a  [routerLink]="['/products']" routerLinkActive="active"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">CAAQMS</a></li>
-              <li><a href="#">CEMS</a></li>
-              <li><a href="#">EQMS</a></li>
-              <li><a href="#">Portable</a></li>
-              <li><a href="#">Water Quality</a></li>
-              <li><a href="#">Analytical Instruments</a></li>
-              <li><a href="#">Gas Chromatography</a></li>
+              <li><a  [routerLink]="['/caaqms']"(click)="set()">CAAQMS</a></li>
+              <li><a  [routerLink]="['/cems']"(click)="set()">CEMS</a></li>
+              <li><a  [routerLink]="['/eqms']"(click)="set()">EQMS</a></li>
+              <li><a  [routerLink]="['/port']"(click)="set()">Portable</a></li>
+              <li><a  [routerLink]="['/water']"(click)="set()">Water Quality</a></li>
+              <li><a  [routerLink]="['/analytical']"(click)="set()">Analytical Instruments</a></li>
+              <li><a  [routerLink]="['/gas']" (click)="set()">Gas Chromatography</a></li>
             </ul>
           </li>
-          <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active" >contact us</a></li>         
+          <li><a  [routerLink]="['/services']" routerLinkActive="active">Services</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="active" >contact us</a></li>         
         </ul>
     </nav>
     </div>

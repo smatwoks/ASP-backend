@@ -14,6 +14,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { CaaqmsComponent } from './caaqms/caaqms.component';
 import { CemsComponent } from './cems/cems.component';
+import { EqmsComponent } from './eqms/eqms.component';
+import { PortComponent } from './port/port.component';
+import { WaterComponent } from './water/water.component';
+import { AnalyticalComponent } from './analytical/analytical.component';
+import { GasComponent } from './gas/gas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +31,11 @@ import { CemsComponent } from './cems/cems.component';
     ContactComponent,
     CaaqmsComponent,
     CemsComponent,
+    EqmsComponent,
+    PortComponent,
+    WaterComponent,
+    AnalyticalComponent,
+    GasComponent,
   ],
   imports: [
     BrowserModule,

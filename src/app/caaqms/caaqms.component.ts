@@ -1,4 +1,4 @@
-import {  Component } from '@angular/core';
+import {  Component, ɵɵqueryRefresh } from '@angular/core';
 
 @Component({
   selector: 'app-caaqms',
@@ -6,15 +6,21 @@ import {  Component } from '@angular/core';
   styleUrls: ['./caaqms.component.css']
 })
 export class CaaqmsComponent {
- 
-  public hasRefreshed = false;
+v:any="";
 
-  refreshPage(): void {
-    if (!this.hasRefreshed) {
-      window.location.reload();
-      this.hasRefreshed = true;
-    }
-  }
-  }
+ngOnInit(): void{
+
+  let value:any = localStorage.getItem("name");
+  console.log(value);
+  let val = JSON.parse(value);
+  console.log(val.name);
+  this.v=val.name;
+  if(this.v = "reddy"){
+    window.location.reload();
+    localStorage.removeItem("name");
+   }
+};
+
+}
 
   

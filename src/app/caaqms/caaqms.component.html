@@ -1,278 +1,279 @@
 <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
-      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+      <h2>Products</h2>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>CAAQMS Products</li>
+      </ol>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+  <section id="projects" class="projects">
+    <div class="container" data-aos="fade-up">
+
+
+      <div class="row  portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
   
-        <h2>Products</h2>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>CAAQMS Products</li>
-        </ol>
   
-      </div>
-    </div><!-- End Breadcrumbs -->
-    <!-- <div class="list-group">
-      CAAQMS
-      <a [routerLink]="['/product/cems']" class="list-group-item list-group-item-action">CEMS</a>
-      <a [routerLink]="['/product/eqms']" class="list-group-item list-group-item-action">EQMS</a>
-      <a [routerLink]="['/product/portable']" class="list-group-item list-group-item-action">Portable</a>
-      <a [routerLink]="['/product/water-quality']" class="list-group-item list-group-item-action">Water Quality</a>
-      <a [routerLink]="['/product/analytical-instruments']" class="list-group-item list-group-item-action">Analytical Instruments</a>
-      <a [routerLink]="['/product/gas-chromatography']" class="list-group-item list-group-item-action">Gas Chromatography</a>
-    </div> -->
-    <!-- ======= Our Projects Section ======= -->
-  
-    <section id="projects" class="projects">
-      <div class="container" data-aos="fade-up">
   
         
-  
-  
-  
-            <div class="portfolio-isotope  " data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
-  
-  
-  
-              <div class="list-group " id="one">
-                <ul class="portfolio-flters list-group" data-aos="fade-up" data-aos-delay="100">
-                  <li data-filter="*" class="filter-active">All</li>
-                  <li data-filter=".filter-MonitoringSystem">Monitoring System</li>
-                  <li data-filter=".filter-SO2Analyzer">SO2 Analyzer</li>
-                  <li data-filter=".filter-NOxAnalyzer">NOx Analyzer</li>
-                  <li data-filter=".filter-COAnalyzer">CO Analyzer</li>
-                  <li data-filter=".filter-O3Analyzer">O3 Analyzer</li>
-                  <li data-filter=".filter-NH3Analyzer">NH3 Analyzer</li>
-                  <li data-filter=".filter-PM10Analyzer">PM10 Analyzer</li>
-                  <li data-filter=".filter-PM25Analyzer">PM2.5 Analyzer</li>
-      
-                </ul><!-- End Projects Filters -->
+         
+       
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <table class="table portfolio-flters ">
+            <thead>
+              <tr>
+                <th><li data-filter="*" class="filter-active" >All</li></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <li data-filter=".filter-MonitoringSystem" >Monitoring System</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-SO2Analyzer" >SO2 Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-NOxAnalyzer" >NOx Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-COAnalyzer" >CO Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-O3Analyzer" >O3 Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-NH3Analyzer" >NH3 Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-PM10Analyzer" >PM10 Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-PM25Analyzer" >PM2.5 Analyzer</li></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-9">
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-12 portfolio-item filter-MonitoringSystem">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="../../assets/img/caaqm/caaqms-systems-001.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div>
+                      <h2>Continuous Ambient Air Quality Monitoring System (CAAQMS)</h2>
+                      <h6>On-Line Continuous Ambient Air Monitoring System / Station for the measurement of SO2, NOx, CO, CO2, O3, PM10, PM2.5 etc. in the ambient environment.</h6>
+                      <ul>
+                        <li>Analyzers approved by various International Agencies like US EPA, TUV, EN, and in line with norms as defined by Central Pollution Control Board (CPCB) including online calibration from remotely located servers like CPCB and State PCB servers.</li>
+                        <li>Uploading of data to CPCB, SPCBs, PCC and company corporate servers. Cloud server facility.</li>
+                        <li>Remote calibration facility.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']">
+                      <button class="btn" style="border-radius: 20px; border-color: blueviolet;">Get Quote</button>
+                    </a>
+                  </div>
+                </div>
               </div>
-              
-      
-              <div class="row gy-4 portfolio-container" id="two" data-aos="fade-up" data-aos-delay="200">
-      
-      
-      
-                <!-- <div class="col-md-9  portfolio-item filter-construction">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/377250757/FM/PL/RN/5167063/caaqms-mnt-envirotech.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>CAAQMS</h2>
-                        <p>Detailed description of CAAQMS, including features, specifications, and any other relevant information.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-      
-      
-      
-      
-                <div class="col-md-9  portfolio-item filter-MonitoringSystem">
-                    <div class="row">
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="../caaqm/caaqms-systems-001.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                      </div>
-                      <div class="col-md-8 d-flex align-items-center">
-                        <div>
-                          <h2>Continuous Ambient Air Quality Monitoring System (CAAQMS)</h2>
-                          <h6>On-Line Continuous Ambient Air Monitoring System / Station for the measurement of SO2, NOx, CO, CO2, O3, PM10, PM2.5 etc. in the ambient environment.</h6>
-                          <ul>
-                            <li>Analyzers approved by various International Agencies like US EPA, TUV, EN, and in line with norms as defined by Central Pollution Control Board (CPCB) including online calibration from remotely located servers like CPCB and State PCB servers.</li>
-                            <li>Uploading of data to CPCB, SPCBs, PCC and company corporate servers. Cloud server facility.</li>
-                            <li>Remote calibration facility.</li>
-                          </ul>
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-      
-                <div class="col-md-9  portfolio-item filter-SO2Analyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>SO2 Analyzer</h2>
-                        <p>The Serinus® 50 sulfur dioxide (SO2) analyser delivers precise and reliable performance at excellent value. It uses proven pulsed UV fluorescent radiation technology to measure SO2 in ambient air (LDL < 0.3 ppb, range 0 to 20 ppm).</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-                <div class="col-md-9  portfolio-item filter-NOxAnalyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>NOx Analyzer</h2>
-                        <p>The Serinus® 40 Oxides of Nitrogen (NOx) analyser delivers precise and reliable performance at excellent value. It uses proven chemiluminescence technology to measure NO, NO2 and NOx in ambient air (LDL < 0.4 ppb, range 0 to 20 ppm).</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-      
-                <div class="col-md-9  portfolio-item filter-COAnalyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>COAnalyzer</h2>
-                        <p>The Serinus® 30 carbon monoxide (CO) analyser delivers precise and reliable performance at excellent value. It uses proven NDIR gas filter correlation technology to measure CO in ambient air (LDL < 40 ppb, range 0 to 200 ppm).</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-      
-      
-                <div class="col-md-9  portfolio-item filter-O3Analyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>O3 Analyzer</h2>
-                        <p>The Serinus® 10 Ozone (O3) analyser delivers precise and reliable performance at excellent value. It uses proven non-dispersive ultraviolet (UV) absorption technology to measure O3 in ambient air (LDL < 0.5 ppb, range 0 to 20 ppm).</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-      
-      
-                <div class="col-md-9  portfolio-item filter-NH3Analyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>NH3 Analyzer</h2>
-                        <p>The Serinus® 44 analyser delivers precise and reliable performance at excellent value. It uses proven chemiluminescence technology and an external thermal catalytic converter to measure NO, NO2, NOX and NH3 in ambient air.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-               
-      
-                <div class="col-md-9  portfolio-item filter-PM10Analyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>PM10 Analyzer</h2>
-                        <p>The Spirant™ BAM 1000 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM10 monitoring.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-      
-      
-                <div class="col-md-9  portfolio-item filter-PM25Analyzer">
-                  <div class="row">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <img src="../caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div>
-                        <h2>PM2.5 Analyzer</h2>
-                        <p>The Spirant™ BAM 1100 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM2.5 monitoring.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <a [routerLink]="['/contact']" >
-                            <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                                Get Qoute
-                            </button>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-      
-                
-      
-              </div><!-- End Projects Container -->
-      
             </div>
-           
-            
+
+            <!-- Add additional product cards here as needed -->
+            <!-- Example for SO2 Analyzer -->
+            <div class="col-md-12 portfolio-item filter-SO2Analyzer">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="SO2 Analyzer" style="max-width: 300px; height: auto;">
+                  </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div>
+                      <h2>SO2 Analyzer</h2>
+                      <p>The Serinus® 50 sulfur dioxide (SO2) analyser delivers precise and reliable performance at excellent value. It uses proven pulsed UV fluorescent radiation technology to measure SO2 in ambient air (LDL < 0.3 ppb, range 0 to 20 ppm).</p>
+                    </div>
+                  </div>
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']">
+                      <button class="btn" style="border-radius: 20px; border-color: blueviolet;">Get Quote</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12  portfolio-item filter-NOxAnalyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>NOx Analyzer</h2>
+                    <p>The Serinus® 40 Oxides of Nitrogen (NOx) analyser delivers precise and reliable performance at excellent value. It uses proven chemiluminescence technology to measure NO, NO2 and NOx in ambient air (LDL < 0.4 ppb, range 0 to 20 ppm).</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            <div class="col-md-12  portfolio-item filter-COAnalyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>COAnalyzer</h2>
+                    <p>The Serinus® 30 carbon monoxide (CO) analyser delivers precise and reliable performance at excellent value. It uses proven NDIR gas filter correlation technology to measure CO in ambient air (LDL < 40 ppb, range 0 to 200 ppm).</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="col-md-12  portfolio-item filter-O3Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>O3 Analyzer</h2>
+                    <p>The Serinus® 10 Ozone (O3) analyser delivers precise and reliable performance at excellent value. It uses proven non-dispersive ultraviolet (UV) absorption technology to measure O3 in ambient air (LDL < 0.5 ppb, range 0 to 20 ppm).</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+            <div class="col-md-12  portfolio-item filter-NH3Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>NH3 Analyzer</h2>
+                    <p>The Serinus® 44 analyser delivers precise and reliable performance at excellent value. It uses proven chemiluminescence technology and an external thermal catalytic converter to measure NO, NO2, NOX and NH3 in ambient air.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            <div class="col-md-12  portfolio-item filter-PM10Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>PM10 Analyzer</h2>
+                    <p>The Spirant™ BAM 1000 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM10 monitoring.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
   
   
-           
   
+            <div class="col-md-12  portfolio-item filter-PM25Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>PM2.5 Analyzer</h2>
+                    <p>The Spirant™ BAM 1100 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM2.5 monitoring.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
   
-            
-  
-          
+
+
+
+
+
+
+            <!-- Continue adding more products similarly -->
+
+          </div>
+        </div>
       </div>
-    </section><!-- End Our Projects Section -->
-  
-  </main><!-- End #main -->
+    </div>
+  <!-- </section> -->
+  <!-- End Our Projects Section -->
+
+<!-- </main> -->
+<!-- End #main -->

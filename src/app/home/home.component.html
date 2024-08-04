@@ -1,4 +1,5 @@
  <!-- ======= Hero Section ======= -->
+  <div class="noselect">
  <section id="hero" class="hero">
 
   <div class="info d-flex align-items-center">
@@ -15,11 +16,11 @@
 
   <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-    <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
-    <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-    <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-    <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-    <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+    <div class="carousel-item active" style="background-image: url(assets/img/ana/product-rd-001.jpg)"></div>
+    <div class="carousel-item" style="background-image: url(assets/img/caaqm/caaqms-systems-001.jpg)"></div>
+    <div class="carousel-item" style="background-image: url(assets/img/ieqms/product-eqms-002.jpg)"></div>
+    <div class="carousel-item" style="background-image: url(assets/img/igas/GAS-1010-ProductPhotoMockUp-20230718.jpg)"></div>
+    <div class="carousel-item" style="background-image: url(assets/img/imgcems/product-cems-003.jpg)"></div>
 
     <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -389,42 +390,44 @@
 
         <div class="col-lg-5" data-aos="fade">
           <form action="forms/quote.php" method="post" class="php-email-form">
-            <h3>Get a quote</h3>
+            <h3>Contact Us</h3>
             <p>Our team is prepared to address any inquiries you may have regarding our product features, specifications, pricing, trials, demonstrations, spare parts, consumables, services, calibration, or any other related matter. Feel free to reach out to us with your questions.
-
-
+    
+    
             </p>
             <div class="row gy-3">
-
+    
               <div class="col-md-12">
-                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <input [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" name="name" class="form-control" placeholder="Name" required >
               </div>
-
+    
               <div class="col-md-12 ">
-                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" class="form-control" name="email" placeholder="Email" required>
               </div>
-
+    
               <div class="col-md-12">
-                <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                <input [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" type="text" class="form-control" name="phone" placeholder="Phone" required>
               </div>
-
+    <h6>Product Or Service Required</h6>
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                 
+                <textarea [(ngModel)]="msg" [ngModelOptions]="{standalone: true}" class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
               </div>
-
+    
               <div class="col-md-12 text-center">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                <button type="submit">Get a quote</button>
+    
+                <button type="submit" (click)="send()">Contact Us 📞</button>
               </div>
-
             </div>
           </form>
         </div><!-- End Quote Form -->
+    
 
       </div>
 
     </div>
   </section><!-- get a quote Section -->
+</div>
