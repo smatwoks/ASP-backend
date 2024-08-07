@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,9 +10,17 @@ import { CaaqmsComponent } from './caaqms/caaqms.component';
 import { CemsComponent } from './cems/cems.component';
 import { EqmsComponent } from './eqms/eqms.component';
 import { PortComponent } from './port/port.component';
-import { GasComponent } from './gas/gas.component';
 import { WaterComponent } from './water/water.component';
-import { AnalyticalComponent } from './analytical/analytical.component';
+import { AirComponent } from './air/air.component';
+import { PurposeComponent } from './purpose/purpose.component';
+import { ProcessComponent } from './process/process.component';
+import { LabComponent } from './lab/lab.component';
+import { MedicalComponent } from './medical/medical.component';
+import { EnvironComponent } from './environ/environ.component';
+import { AttachmentComponent } from './attachment/attachment.component';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,13 +36,21 @@ const routes: Routes = [
   {path:'eqms',component:EqmsComponent},
   {path:'port',component:PortComponent},
   {path:'water',component:WaterComponent},
-  {path:'analytical',component:AnalyticalComponent},
-  {path:'gas',component:GasComponent},
-  { path: '**', redirectTo: '/home' }
+  {path:'air',component:AirComponent},
+  {path:'purpose',component:PurposeComponent},
+  {path:'process',component:ProcessComponent},
+  {path:'lab',component:LabComponent},
+  {path:'medical',component:MedicalComponent},
+  {path:'environ',component:EnvironComponent},
+  {path:'attach',component:AttachmentComponent},
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+    FormsModule,
+    CommonModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

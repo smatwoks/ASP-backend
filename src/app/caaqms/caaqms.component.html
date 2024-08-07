@@ -26,7 +26,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <table class="table portfolio-flters ">
+          <table class="table portfolio-flters  ">
             <thead>
               <tr>
                 <th><li data-filter="*" class="filter-active" >All</li></th>
@@ -35,6 +35,12 @@
             <tbody>
               <tr>
                 <td> <li data-filter=".filter-MonitoringSystem" >Monitoring System</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-PM25Analyzer" >PM2.5 Analyzer</li></td>
+              </tr>
+              <tr>
+                <td><li data-filter=".filter-PM10Analyzer" >PM10 Analyzer</li></td>
               </tr>
               <tr>
                 <td><li data-filter=".filter-SO2Analyzer" >SO2 Analyzer</li></td>
@@ -52,11 +58,17 @@
                 <td><li data-filter=".filter-NH3Analyzer" >NH3 Analyzer</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-PM10Analyzer" >PM10 Analyzer</li></td>
+                <td><li data-filter=".filter-dc" >Dynamic Calibrator</li></td>
               </tr>
               <tr>
-                <td><li data-filter=".filter-PM25Analyzer" >PM2.5 Analyzer</li></td>
+                <td><li data-filter=".filter-zero" >Zero Gas Generator</li></td>
               </tr>
+              <tr>
+                <td><li data-filter=".filter-voc" >Online VOC Analyzer</li></td>
+              </tr>
+             
+              
+              
             </tbody>
           </table>
         </div>
@@ -89,13 +101,65 @@
               </div>
             </div>
 
+
+
+            <div class="col-md-12  portfolio-item filter-PM25Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>PM2.5 Analyzer</h2>
+                    <p>The Spirant™ BAM 1100 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM2.5 monitoring.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            
+            <div class="col-md-12  portfolio-item filter-PM10Analyzer">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>PM10 Analyzer</h2>
+                    <p>The Spirant™ BAM 1000 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM10 monitoring.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+  
+
             <!-- Add additional product cards here as needed -->
             <!-- Example for SO2 Analyzer -->
             <div class="col-md-12 portfolio-item filter-SO2Analyzer">
               <div class="card">
                 <div class="row">
                   <div class="col-md-4 d-flex align-items-center">
-                    <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="SO2 Analyzer" style="max-width: 300px; height: auto;">
+                    <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="SO2 Analyzer" style="max-width: 300px; height: auto;">
                   </div>
                   <div class="col-md-8 d-flex align-items-center">
                     <div>
@@ -116,7 +180,7 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
@@ -141,7 +205,7 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
@@ -165,7 +229,7 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
@@ -191,7 +255,7 @@
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/caaqms-systems-003.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
@@ -210,18 +274,79 @@
             </div>
             </div>
 
+           
 
 
-            <div class="col-md-12  portfolio-item filter-PM10Analyzer">
+           
+            
+
+
+            <div class="col-md-12  portfolio-item filter-dc">
               <div class="card">
               <div class="row">
                 <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-008.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                  <img src="../../assets/img/caaqm/dc.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
                   <div>
-                    <h2>PM10 Analyzer</h2>
-                    <p>The Spirant™ BAM 1000 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM10 monitoring.</p>
+                    <h2>Dynamic Calibrator</h2>
+                    <p>ASP-580 Dynamic Calibrator is a multi-channel gas calibration instrument based on Microprocessor Technology and specifically developed for precise gas analyzer. By adopting high precision mass flow controller and standard gas, the calibrator provides calibration standard gas for zero point and span test of multiple gas parameters, as well as four gas sources at the same time. Dynamic calibrator can be equipped with built-in programmable ozone generator, which can be used not only for accurate and reliable ozone calibration, but also for GPT to generate NO2. The ozone generator adopts multi-point piecewise linear drive to ensure the repeatability and accuracy of ozone concentration; the optional photometer also enables higher precision control of the ozone generator. Dynamic calibrator has fast response, high repeatability, high precision and is easy to use. It can also be customized according to customer requirements.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            <div class="col-md-12  portfolio-item filter-zero">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="../../assets/img/caaqm/zero.png" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>Zero Gas Generator</h2>
+                    <p>ASP-590 Zero Gas Generator is an instrument that provides clean, dry zero gas. The Zero Gas Generator includes an external oil-free air compressor, pressure flow controller, water removal system, SO2, NO, NO2, O3 and H2S remover, CO and hydrocarbon remover. The Zero Gas Generator is based on adsorption, filtration, reaction and other principles to remove SO2, NO, NO2, O3, H2S, CO, NH3, hydrocarbons and particulate matters in the air, and output dry and clean air. An internal water removal system removes moisture from the air, produces air of which dew point is below -20°C, and is independent of the dew point at the inlet. It is also helpful to remove other gases and greatly prolongs the service life of the chemical remover.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a [routerLink]="['/contact']" >
+                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
+                            Get Qoute
+                        </button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            </div>
+            
+
+
+
+
+           
+            <div class="col-md-12  portfolio-item filter-voc">
+              <div class="card">
+              <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                  <img src="https://storage.googleapis.com/studio-cms-assets/projects/1pqDwe1bOj/s-1200x1200_v-fms_webp_ffa2d18d-4013-4e7f-84b7-29917e8f7d6b_small.webp" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div>
+                    <h2>Online VOC Analyzer</h2>
+                    <p> This measuring instrument is a state-of-the-art VOC monitor that uses a hydrogen flame ionization detector with heating of all measurement lines. The sample flow path is heated to a high temperature for measurement (HOT FID), so it can measure a wide range of T-VOCs quickly and continuously, from low concentration and low boiling point to high concentration and high boiling point. In addition, the use of a corrosion-resistant FID allows it to measure organic chlorine gases. In the unlikely event that the hydrogen flame goes out, the instrument is designed to automatically shut off the hydrogen line, so you can use it with peace of mind.
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-12 d-flex justify-content-center">
@@ -236,29 +361,7 @@
             </div>
   
   
-  
-            <div class="col-md-12  portfolio-item filter-PM25Analyzer">
-              <div class="card">
-              <div class="row">
-                <div class="col-md-4 d-flex align-items-center">
-                  <img src="../../assets/img/caaqm/caaqms-systems-003.jpg" class="img-fluid" alt="CAAQMS" style="max-width: 300px; height: auto;">
-                </div>
-                <div class="col-md-8 d-flex align-items-center">
-                  <div>
-                    <h2>PM2.5 Analyzer</h2>
-                    <p>The Spirant™ BAM 1100 automatically measures and records airborne particulate concentrations using the beta ray attenuation method. It is designated by the US EPA as Federal Equivalent Method for PM2.5 monitoring.</p>
-                  </div>
-                </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <a [routerLink]="['/contact']" >
-                        <button class="btn" style="border-radius: 20px; border-color: blueviolet ;  " >
-                            Get Qoute
-                        </button>
-                    </a>
-                  </div>
-              </div>
-            </div>
-            </div>
+            
   
 
 

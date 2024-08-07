@@ -19,6 +19,13 @@ import { PortComponent } from './port/port.component';
 import { WaterComponent } from './water/water.component';
 import { AnalyticalComponent } from './analytical/analytical.component';
 import { GasComponent } from './gas/gas.component';
+import { AirComponent } from './air/air.component';
+import { PurposeComponent } from './purpose/purpose.component';
+import { ProcessComponent } from './process/process.component';
+import { LabComponent } from './lab/lab.component';
+import { MedicalComponent } from './medical/medical.component';
+import { EnvironComponent } from './environ/environ.component';
+import { AttachmentComponent } from './attachment/attachment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +43,13 @@ import { GasComponent } from './gas/gas.component';
     WaterComponent,
     AnalyticalComponent,
     GasComponent,
+    AirComponent,
+    PurposeComponent,
+    ProcessComponent,
+    LabComponent,
+    MedicalComponent,
+    EnvironComponent,
+    AttachmentComponent,
   ],
   imports: [
     BrowserModule,
